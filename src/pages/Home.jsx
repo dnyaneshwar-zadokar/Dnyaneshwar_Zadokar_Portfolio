@@ -25,7 +25,7 @@ export default function Home() {
     { img: linkedinLogo, title: 'LinkedIn', link: 'https://www.linkedin.com/in/dnyaneshwar-zadokar/' },
     { img: gmailLogo, title: 'Email', link: 'dnyaneshwarzadokar227@gmail.com' },
     { img: whatsappLogo, title: 'WhatsApp', link: 'https://wa.me/+918208496552' },
-    { img: instagramLogo, title: 'Instagram', link: 'https://www.instagram.com/kunj_2834/' },
+    { img: instagramLogo, title: 'Instagram', link: 'https://www.instagram.com/itz_dnyaneshwar_08/' },
     
   ]
 

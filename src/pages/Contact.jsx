@@ -72,8 +72,8 @@ export default function Contact() {
     },
     { img: gmailLogo, title: "Email", link: "mailto:dnyaneshwarzadokar227@gmail.com" },
     { img: whatsappLogo, title: "WhatsApp", link: "https://wa.me/+918208496552" },
-    { img: instagramLogo, title: "Instagram", link: "https://www.instagram.com/kunj_2834/" },
-    
+    { img: instagramLogo, title: "Instagram", link: "https://www.instagram.com/itz_dnyaneshwar_08/" },
+
   ];
 
   return (
