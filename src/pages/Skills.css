@@ -1,0 +1,215 @@
+.skills-container {
+  padding: 100px 5%;
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Header Styling --- */
+.skills-header {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.title-gradient {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #00ffc8, #008cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #00ffc8, #008cff);
+  border-radius: 2px;
+  margin-bottom: 25px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* --- Floating Orbs Stage --- */
+.skills-stage {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  background: radial-gradient(circle at 50% 50%, #0d0d0d, #000);
+  border-radius: 30px;
+  margin-bottom: 80px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.skill-circle {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.mern-orb {
+  background: rgba(0, 255, 200, 0.05);
+  border-color: rgba(0, 255, 200, 0.2);
+}
+
+.skill-logo {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 4px;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+}
+
+.skill-name {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+/* --- Skills Grid --- */
+.skills-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.skills-row-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 30px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+/* Glassmorphism Hover */
+.skill-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Highlighting Logic */
+.mern-highlight {
+  border-color: rgba(0, 255, 200, 0.2);
+  box-shadow: inset 0 0 20px rgba(0, 255, 200, 0.02);
+}
+
+.mern-highlight:hover {
+  border-color: rgba(0, 255, 200, 0.4);
+  box-shadow: 0 0 30px rgba(0, 255, 200, 0.1);
+}
+
+.ai-highlight {
+  border-color: rgba(0, 140, 255, 0.2);
+}
+
+.ai-highlight:hover {
+  border-color: rgba(0, 140, 255, 0.4);
+  box-shadow: 0 0 30px rgba(0, 140, 255, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.card-header h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.badge.mern {
+  background: rgba(0, 255, 200, 0.1);
+  color: #00ffc8;
+  border: 1px solid rgba(0, 255, 200, 0.3);
+}
+
+.badge.ai {
+  background: rgba(0, 140, 255, 0.1);
+  color: #008cff;
+  border: 1px solid rgba(0, 140, 255, 0.3);
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-list li {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.skill-list li:hover {
+  color: #fff;
+  transform: translateX(8px);
+}
+
+.bullet {
+  color: #00ffc8;
+  margin-right: 12px;
+  font-weight: 900;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .title-gradient {
+    font-size: 2.5rem;
+  }
+  .skills-stage {
+    height: 400px;
+  }
+  .skill-circle {
+    width: 80px;
+    height: 80px;
+  }
+  .skill-logo {
+    width: 32px;
+    height: 32px;
+  }
+}
+
